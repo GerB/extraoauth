@@ -1,0 +1,29 @@
+services:
+    towen.extraoauth.listener:
+        class: towen\extraoauth\event\main_listener
+        tags:
+            - { name: event.listener }
+
+    auth.provider.oauth.service.GitHub:
+        class: towen\extraoauth\oauth\service\github
+        arguments:
+            - @config
+            - @request
+        tags:
+            - { name: auth.provider.oauth.service }
+
+    auth.provider.oauth.service.twitter:
+        class: towen\extraoauth\oauth\service\twitter
+        arguments:
+            - @config
+            - @request
+        tags:
+            - { name: auth.provider.oauth.service }
+
+    auth.provider.oauth.service.microsoft:
+        class: towen\extraoauth\oauth\service\microsoft
+        arguments:
+            - @config
+            - @request
+        tags:
+            - { name: auth.provider.oauth.service }

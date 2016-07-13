@@ -1,0 +1,26 @@
+{
+    "name": "towen/extraoauth",
+    "type": "phpbb-extension",
+    "description": "Adds extra OAuth options",
+    "homepage": "https://github.com/ktowen/extraoauth/",
+    "version": "1.0.0",
+    "time": "2016-07-12",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Pedro Almirall",
+            "email": "towenpa@gmail.com",
+            "homepage": "https://github.com/ktowen/",
+            "role": "Lead Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "extra": {
+        "display-name": "Extra OAuth",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.1.4,<3.2.0@dev"
+        }
+    }
+}
